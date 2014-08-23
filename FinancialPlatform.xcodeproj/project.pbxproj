@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1884AC6E19A8E07300CE61B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1884AC6D19A8E07300CE61B4 /* Foundation.framework */; };
+		1884AC7019A8E07300CE61B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1884AC6F19A8E07300CE61B4 /* CoreGraphics.framework */; };
+		1884AC7219A8E07300CE61B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1884AC7119A8E07300CE61B4 /* UIKit.framework */; };
+		1884AC7819A8E07300CE61B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1884AC7619A8E07300CE61B4 /* InfoPlist.strings */; };
+		1884AC7A19A8E07300CE61B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884AC7919A8E07300CE61B4 /* main.m */; };
+		1884AC7E19A8E07300CE61B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884AC7D19A8E07300CE61B4 /* AppDelegate.m */; };
+		1884AC8119A8E07300CE61B4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1884AC7F19A8E07300CE61B4 /* Main_iPhone.storyboard */; };
+		1884AC8419A8E07300CE61B4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1884AC8219A8E07300CE61B4 /* Main_iPad.storyboard */; };
+		1884AC8719A8E07300CE61B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884AC8619A8E07300CE61B4 /* ViewController.m */; };
+		1884AC8919A8E07300CE61B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1884AC8819A8E07300CE61B4 /* Images.xcassets */; };
+		1884AC9019A8E07300CE61B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1884AC8F19A8E07300CE61B4 /* XCTest.framework */; };
+		1884AC9119A8E07300CE61B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1884AC6D19A8E07300CE61B4 /* Foundation.framework */; };
+		1884AC9219A8E07300CE61B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1884AC7119A8E07300CE61B4 /* UIKit.framework */; };
+		1884AC9A19A8E07400CE61B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1884AC9819A8E07400CE61B4 /* InfoPlist.strings */; };
+		1884AC9C19A8E07400CE61B4 /* FinancialPlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884AC9B19A8E07400CE61B4 /* FinancialPlatformTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1884AC9319A8E07300CE61B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1884AC6219A8E07300CE61B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1884AC6919A8E07300CE61B4;
+			remoteInfo = FinancialPlatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1884AC6A19A8E07300CE61B4 /* FinancialPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1884AC6D19A8E07300CE61B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1884AC6F19A8E07300CE61B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1884AC7119A8E07300CE61B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1884AC7519A8E07300CE61B4 /* FinancialPlatform-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FinancialPlatform-Info.plist"; sourceTree = "<group>"; };
+		1884AC7719A8E07300CE61B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1884AC7919A8E07300CE61B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1884AC7B19A8E07300CE61B4 /* FinancialPlatform-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinancialPlatform-Prefix.pch"; sourceTree = "<group>"; };
+		1884AC7C19A8E07300CE61B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1884AC7D19A8E07300CE61B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1884AC8019A8E07300CE61B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		1884AC8319A8E07300CE61B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		1884AC8519A8E07300CE61B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1884AC8619A8E07300CE61B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1884AC8819A8E07300CE61B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1884AC8E19A8E07300CE61B4 /* FinancialPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinancialPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1884AC8F19A8E07300CE61B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1884AC9719A8E07400CE61B4 /* FinancialPlatformTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FinancialPlatformTests-Info.plist"; sourceTree = "<group>"; };
+		1884AC9919A8E07400CE61B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1884AC9B19A8E07400CE61B4 /* FinancialPlatformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinancialPlatformTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1884AC6719A8E07300CE61B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1884AC7019A8E07300CE61B4 /* CoreGraphics.framework in Frameworks */,
+				1884AC7219A8E07300CE61B4 /* UIKit.framework in Frameworks */,
+				1884AC6E19A8E07300CE61B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1884AC8B19A8E07300CE61B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1884AC9019A8E07300CE61B4 /* XCTest.framework in Frameworks */,
+				1884AC9219A8E07300CE61B4 /* UIKit.framework in Frameworks */,
+				1884AC9119A8E07300CE61B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1884AC6119A8E07300CE61B4 = {
+			isa = PBXGroup;
+			children = (
+				1884AC7319A8E07300CE61B4 /* FinancialPlatform */,
+				1884AC9519A8E07300CE61B4 /* FinancialPlatformTests */,
+				1884AC6C19A8E07300CE61B4 /* Frameworks */,
+				1884AC6B19A8E07300CE61B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1884AC6B19A8E07300CE61B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1884AC6A19A8E07300CE61B4 /* FinancialPlatform.app */,
+				1884AC8E19A8E07300CE61B4 /* FinancialPlatformTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1884AC6C19A8E07300CE61B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1884AC6D19A8E07300CE61B4 /* Foundation.framework */,
+				1884AC6F19A8E07300CE61B4 /* CoreGraphics.framework */,
+				1884AC7119A8E07300CE61B4 /* UIKit.framework */,
+				1884AC8F19A8E07300CE61B4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1884AC7319A8E07300CE61B4 /* FinancialPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				1884AC7C19A8E07300CE61B4 /* AppDelegate.h */,
+				1884AC7D19A8E07300CE61B4 /* AppDelegate.m */,
+				1884AC7F19A8E07300CE61B4 /* Main_iPhone.storyboard */,
+				1884AC8219A8E07300CE61B4 /* Main_iPad.storyboard */,
+				1884AC8519A8E07300CE61B4 /* ViewController.h */,
+				1884AC8619A8E07300CE61B4 /* ViewController.m */,
+				1884AC8819A8E07300CE61B4 /* Images.xcassets */,
+				1884AC7419A8E07300CE61B4 /* Supporting Files */,
+			);
+			path = FinancialPlatform;
+			sourceTree = "<group>";
+		};
+		1884AC7419A8E07300CE61B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1884AC7519A8E07300CE61B4 /* FinancialPlatform-Info.plist */,
+				1884AC7619A8E07300CE61B4 /* InfoPlist.strings */,
+				1884AC7919A8E07300CE61B4 /* main.m */,
+				1884AC7B19A8E07300CE61B4 /* FinancialPlatform-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1884AC9519A8E07300CE61B4 /* FinancialPlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				1884AC9B19A8E07400CE61B4 /* FinancialPlatformTests.m */,
+				1884AC9619A8E07400CE61B4 /* Supporting Files */,
+			);
+			path = FinancialPlatformTests;
+			sourceTree = "<group>";
+		};
+		1884AC9619A8E07400CE61B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1884AC9719A8E07400CE61B4 /* FinancialPlatformTests-Info.plist */,
+				1884AC9819A8E07400CE61B4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1884AC6919A8E07300CE61B4 /* FinancialPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1884AC9F19A8E07400CE61B4 /* Build configuration list for PBXNativeTarget "FinancialPlatform" */;
+			buildPhases = (
+				1884AC6619A8E07300CE61B4 /* Sources */,
+				1884AC6719A8E07300CE61B4 /* Frameworks */,
+				1884AC6819A8E07300CE61B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinancialPlatform;
+			productName = FinancialPlatform;
+			productReference = 1884AC6A19A8E07300CE61B4 /* FinancialPlatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1884AC8D19A8E07300CE61B4 /* FinancialPlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1884ACA219A8E07400CE61B4 /* Build configuration list for PBXNativeTarget "FinancialPlatformTests" */;
+			buildPhases = (
+				1884AC8A19A8E07300CE61B4 /* Sources */,
+				1884AC8B19A8E07300CE61B4 /* Frameworks */,
+				1884AC8C19A8E07300CE61B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1884AC9419A8E07300CE61B4 /* PBXTargetDependency */,
+			);
+			name = FinancialPlatformTests;
+			productName = FinancialPlatformTests;
+			productReference = 1884AC8E19A8E07300CE61B4 /* FinancialPlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1884AC6219A8E07300CE61B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = yuanxin;
+				TargetAttributes = {
+					1884AC8D19A8E07300CE61B4 = {
+						TestTargetID = 1884AC6919A8E07300CE61B4;
+					};
+				};
+			};
+			buildConfigurationList = 1884AC6519A8E07300CE61B4 /* Build configuration list for PBXProject "FinancialPlatform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1884AC6119A8E07300CE61B4;
+			productRefGroup = 1884AC6B19A8E07300CE61B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1884AC6919A8E07300CE61B4 /* FinancialPlatform */,
+				1884AC8D19A8E07300CE61B4 /* FinancialPlatformTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1884AC6819A8E07300CE61B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1884AC8419A8E07300CE61B4 /* Main_iPad.storyboard in Resources */,
+				1884AC8919A8E07300CE61B4 /* Images.xcassets in Resources */,
+				1884AC8119A8E07300CE61B4 /* Main_iPhone.storyboard in Resources */,
+				1884AC7819A8E07300CE61B4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1884AC8C19A8E07300CE61B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1884AC9A19A8E07400CE61B4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1884AC6619A8E07300CE61B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1884AC8719A8E07300CE61B4 /* ViewController.m in Sources */,
+				1884AC7E19A8E07300CE61B4 /* AppDelegate.m in Sources */,
+				1884AC7A19A8E07300CE61B4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1884AC8A19A8E07300CE61B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1884AC9C19A8E07400CE61B4 /* FinancialPlatformTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1884AC9419A8E07300CE61B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1884AC6919A8E07300CE61B4 /* FinancialPlatform */;
+			targetProxy = 1884AC9319A8E07300CE61B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1884AC7619A8E07300CE61B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1884AC7719A8E07300CE61B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1884AC7F19A8E07300CE61B4 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1884AC8019A8E07300CE61B4 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1884AC8219A8E07300CE61B4 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1884AC8319A8E07300CE61B4 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		1884AC9819A8E07400CE61B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1884AC9919A8E07400CE61B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1884AC9D19A8E07400CE61B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1884AC9E19A8E07400CE61B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1884ACA019A8E07400CE61B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FinancialPlatform/FinancialPlatform-Prefix.pch";
+				INFOPLIST_FILE = "FinancialPlatform/FinancialPlatform-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1884ACA119A8E07400CE61B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FinancialPlatform/FinancialPlatform-Prefix.pch";
+				INFOPLIST_FILE = "FinancialPlatform/FinancialPlatform-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1884ACA319A8E07400CE61B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FinancialPlatform.app/FinancialPlatform";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FinancialPlatform/FinancialPlatform-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FinancialPlatformTests/FinancialPlatformTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1884ACA419A8E07400CE61B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FinancialPlatform.app/FinancialPlatform";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FinancialPlatform/FinancialPlatform-Prefix.pch";
+				INFOPLIST_FILE = "FinancialPlatformTests/FinancialPlatformTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1884AC6519A8E07300CE61B4 /* Build configuration list for PBXProject "FinancialPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1884AC9D19A8E07400CE61B4 /* Debug */,
+				1884AC9E19A8E07400CE61B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1884AC9F19A8E07400CE61B4 /* Build configuration list for PBXNativeTarget "FinancialPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1884ACA019A8E07400CE61B4 /* Debug */,
+				1884ACA119A8E07400CE61B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1884ACA219A8E07400CE61B4 /* Build configuration list for PBXNativeTarget "FinancialPlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1884ACA319A8E07400CE61B4 /* Debug */,
+				1884ACA419A8E07400CE61B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1884AC6219A8E07300CE61B4 /* Project object */;
+}
