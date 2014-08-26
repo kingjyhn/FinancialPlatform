@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FinancialPlatform/Views/HomeViewController.m"
-            timestampString = "430553853.245771"
+            timestampString = "430753097.947318"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "-loadRecommendedView"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

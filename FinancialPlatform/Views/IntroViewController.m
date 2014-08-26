@@ -74,7 +74,7 @@
     pageCtl.currentPage = page;
 }
 
-- (IBAction)changePage:(id)sender {
+- (void)changePage:(id)sender {
     int page = pageCtl.currentPage;
     [baseView setContentOffset:CGPointMake(baseView.frame.size.width * page, 0)];
 }
