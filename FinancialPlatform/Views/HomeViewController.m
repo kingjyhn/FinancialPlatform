@@ -14,18 +14,23 @@
 #import "AppDelegate.h"
 #import "CategoryViewController.h"
 #import "DXSemiViewControllerCategory.h"
+#import "TrendViewController.h"
+#import "TrendView.h"
 
 @interface HomeViewController ()<UIScrollViewDelegate>
 {
     IntroViewController *introVC;
     BOOL isShowStatusBar;
     BOOL isShowCategoryView;
+    BOOL isLoadIntroStatus;
     int categorySelectedIndex;
     NSMutableArray *recommendedViewsArray;
+    NSMutableArray *trendKindArray;
 }
 
 @property (weak, nonatomic) IBOutlet UIView *recommendedView;
 @property (weak, nonatomic) IBOutlet UIScrollView *recommendedScrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView *trendScrollView;
 
 
 @end
@@ -51,12 +56,12 @@
     [self loadIntroView];
     [self setBarItem];
     [self loadRecommendedView];
-
+    [self loadTrendView];
 }
 
 - (void)initStatus
 {
-    isShowStatusBar = NO;
+    
     isShowCategoryView = NO;
     categorySelectedIndex = 0;
 }
@@ -69,10 +74,11 @@
         //[self.view addSubview:introVC.view];
         AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
         if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
-            [self prefersStatusBarHidden];
-            [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+            //[self prefersStatusBarHidden];
+            //[self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+            //[self setNeedsStatusBarAppearanceUpdate];
         }
-        [self setNeedsStatusBarAppearanceUpdate];
+        
         [[appDelegate window] addSubview:introVC.view];
     }
 }
@@ -144,6 +150,23 @@
     [self.recommendedScrollView setContentOffset:CGPointMake(self.recommendedScrollView.frame.size.width, 0)];
 }
 
+- (void)loadTrendView
+{
+    trendKindArray = [[NSMutableArray alloc] initWithObjects:@" 资产",@" 组合",@" 管理人",@" 热门搜索",nil];
+    self.trendScrollView.contentSize = CGSizeMake([trendKindArray count] * self.trendScrollView.frame.size.width, self.trendScrollView.frame.size.height);
+    self.trendScrollView.pagingEnabled = YES;
+    for (int i = 0; i<[trendKindArray count]; i++) {
+        TrendView *trendView = [[TrendView alloc] init];
+        trendView.data = [[NSArray alloc] initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6", nil];
+        trendView.title = [trendKindArray objectAtIndex:i];
+        trendView.delegate = trendView;
+        trendView.dataSource = trendView;
+//        trendView.bounces = NO;
+        trendView.frame = CGRectMake(i * self.trendScrollView.frame.size.width, 0, self.trendScrollView.frame.size.width, self.trendScrollView.frame.size.height);
+        [self.trendScrollView addSubview:trendView];
+    }
+}
+
 - (void)showCategory
 {
     if (!isShowCategoryView) {
@@ -162,6 +185,18 @@
 
 - (BOOL)prefersStatusBarHidden
 {
+    if (isLoadIntroStatus) {
+        
+    }else{
+        BOOL isFirstEntrance = [StateServices isFirstEntrance];
+        if (isFirstEntrance){
+            isShowStatusBar = NO;
+        }else{
+            isShowStatusBar = YES;
+        }
+        isLoadIntroStatus = YES;
+    }
+    
     if (isShowStatusBar) {
         isShowStatusBar = !isShowStatusBar;
         return NO;
@@ -175,8 +210,8 @@
 - (void)removeIntro
 {
     if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
-        [self prefersStatusBarHidden];
-        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+//        [self prefersStatusBarHidden];
+//        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
     }
     [self setNeedsStatusBarAppearanceUpdate];
 }

@@ -58,6 +58,8 @@
 		189E0A4F19ACAFF500B4B2B6 /* recommended3.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E0A4A19ACAFF500B4B2B6 /* recommended3.png */; };
 		189E0A5019ACAFF500B4B2B6 /* recommended4.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E0A4B19ACAFF500B4B2B6 /* recommended4.png */; };
 		189E0A5119ACAFF500B4B2B6 /* recommended5.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E0A4C19ACAFF500B4B2B6 /* recommended5.png */; };
+		189E0A5819B2D87000B4B2B6 /* TrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E0A5719B2D87000B4B2B6 /* TrendViewController.m */; };
+		189E0A5B19B2DDE500B4B2B6 /* TrendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E0A5A19B2DDE500B4B2B6 /* TrendView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,10 @@
 		189E0A4A19ACAFF500B4B2B6 /* recommended3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recommended3.png; path = Images/recommended3.png; sourceTree = "<group>"; };
 		189E0A4B19ACAFF500B4B2B6 /* recommended4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recommended4.png; path = Images/recommended4.png; sourceTree = "<group>"; };
 		189E0A4C19ACAFF500B4B2B6 /* recommended5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recommended5.png; path = Images/recommended5.png; sourceTree = "<group>"; };
+		189E0A5619B2D87000B4B2B6 /* TrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrendViewController.h; path = Views/TrendViewController.h; sourceTree = "<group>"; };
+		189E0A5719B2D87000B4B2B6 /* TrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrendViewController.m; path = Views/TrendViewController.m; sourceTree = "<group>"; };
+		189E0A5919B2DDE500B4B2B6 /* TrendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrendView.h; path = Views/TrendView.h; sourceTree = "<group>"; };
+		189E0A5A19B2DDE500B4B2B6 /* TrendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrendView.m; path = Views/TrendView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,8 +259,12 @@
 				1884ACB419A8E8F400CE61B4 /* IntroViewController.xib */,
 				1884ACED19A9A00800CE61B4 /* CategoryViewController.h */,
 				1884ACEE19A9A00800CE61B4 /* CategoryViewController.m */,
+				189E0A5619B2D87000B4B2B6 /* TrendViewController.h */,
+				189E0A5719B2D87000B4B2B6 /* TrendViewController.m */,
 				1884ACF019A9AAB400CE61B4 /* Cells */,
 				1884ACB619A8E97E00CE61B4 /* Intros */,
+				189E0A5919B2DDE500B4B2B6 /* TrendView.h */,
+				189E0A5A19B2DDE500B4B2B6 /* TrendView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -466,6 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189E0A5819B2D87000B4B2B6 /* TrendViewController.m in Sources */,
 				1884AC8719A8E07300CE61B4 /* ViewController.m in Sources */,
 				1884AC7E19A8E07300CE61B4 /* AppDelegate.m in Sources */,
 				1884AC7A19A8E07300CE61B4 /* main.m in Sources */,
@@ -479,6 +490,7 @@
 				1884ACEC19A99F4F00CE61B4 /* DXSemiViewControllerCategory.m in Sources */,
 				1884ACEA19A99F4F00CE61B4 /* DXSemiTableViewController.m in Sources */,
 				1884ACAB19A8E61400CE61B4 /* IntroViewController.m in Sources */,
+				189E0A5B19B2DDE500B4B2B6 /* TrendView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

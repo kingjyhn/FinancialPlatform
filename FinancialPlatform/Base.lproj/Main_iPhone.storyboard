@@ -46,8 +46,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4B1-DR-9r2">
-                                <rect key="frame" x="0.0" y="258" width="320" height="246"/>
+                                <rect key="frame" x="0.0" y="248" width="320" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbE-QL-UmO">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="256"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </scrollView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -58,6 +64,7 @@
                     <connections>
                         <outlet property="recommendedScrollView" destination="8fy-0z-VHs" id="S6D-fl-CMu"/>
                         <outlet property="recommendedView" destination="Mjl-Qs-rXv" id="SS7-Z8-kVe"/>
+                        <outlet property="trendScrollView" destination="mbE-QL-UmO" id="6mc-K0-Fky"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOL-pu-fl8" userLabel="First Responder" sceneMemberID="firstResponder"/>

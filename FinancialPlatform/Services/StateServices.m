@@ -12,6 +12,6 @@
 
 +(BOOL)isFirstEntrance
 {
-    return NO;
+    return YES;
 }
 @end
