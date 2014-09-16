@@ -73,4 +73,11 @@
     return 44.0;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.trendDelegate respondsToSelector:@selector(didSelectedTrendCellAt:forTrendNum:)]) {
+        [self.trendDelegate didSelectedTrendCellAt:indexPath forTrendNum:self.trendIndex];
+    }
+}
+
 @end

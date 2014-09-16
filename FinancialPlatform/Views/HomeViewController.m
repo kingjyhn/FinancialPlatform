@@ -16,8 +16,13 @@
 #import "DXSemiViewControllerCategory.h"
 #import "TrendViewController.h"
 #import "TrendView.h"
+#import "MyAccountViewController.h"
+#import "MyCombinationViewController.h"
+#import "FocusViewController.h"
+#import "ConsultantViewController.h"
+#import "MyCycleViewController.h"
 
-@interface HomeViewController ()<UIScrollViewDelegate>
+@interface HomeViewController ()<UIScrollViewDelegate,TrendDelegate>
 {
     IntroViewController *introVC;
     BOOL isShowStatusBar;
@@ -26,12 +31,18 @@
     int categorySelectedIndex;
     NSMutableArray *recommendedViewsArray;
     NSMutableArray *trendKindArray;
+    MyAccountViewController *myAccountView;
+    MyCombinationViewController *myCombinationView;
+    FocusViewController *focusView;
+    ConsultantViewController *consultantView;
+    MyCycleViewController *myCycleView;
 }
 
 @property (weak, nonatomic) IBOutlet UIView *recommendedView;
 @property (weak, nonatomic) IBOutlet UIScrollView *recommendedScrollView;
 @property (weak, nonatomic) IBOutlet UIScrollView *trendScrollView;
-
+@property (weak, nonatomic) IBOutlet UIView *baseView;
+@property (weak, nonatomic) IBOutlet UIView *homeView;
 
 @end
 
@@ -52,11 +63,32 @@
     [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector(removeIntro) name:@"RemoveIntro" object:nil];
     [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector(categoryViewDismiss) name:@"CategoryViewDismiss" object:nil];
     [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector(selectIndex:) name:@"SelectIndex" object:nil];
+    [self loadCategoryViews];
     [self initStatus];
     [self loadIntroView];
     [self setBarItem];
     [self loadRecommendedView];
     [self loadTrendView];
+}
+
+- (void)loadCategoryViews
+{
+    myAccountView = [[MyAccountViewController alloc] init];
+    [self.baseView addSubview:myAccountView.view];
+    
+    myCombinationView = [[MyCombinationViewController alloc] init];
+    [self.baseView addSubview:myCombinationView.view];
+    
+    focusView = [[FocusViewController alloc] init];
+    [self.baseView addSubview:focusView.view];
+    
+    consultantView = [[ConsultantViewController alloc] init];
+    [self.baseView addSubview:consultantView.view];
+    
+    myCycleView = [[MyCycleViewController alloc] init];
+    [self.baseView addSubview:myCycleView.view];
+    
+    [self.baseView bringSubviewToFront:self.homeView];
 }
 
 - (void)initStatus
@@ -159,6 +191,8 @@
         TrendView *trendView = [[TrendView alloc] init];
         trendView.data = [[NSArray alloc] initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6", nil];
         trendView.title = [trendKindArray objectAtIndex:i];
+        trendView.trendIndex = i;
+        trendView.trendDelegate = self;
         trendView.delegate = trendView;
         trendView.dataSource = trendView;
 //        trendView.bounces = NO;
@@ -221,6 +255,29 @@
     NSDictionary *data = notify.object;
     int index = [[data valueForKey:@"index"] intValue];
     categorySelectedIndex = index;
+    switch (categorySelectedIndex) {
+        case 0:
+            [self.baseView bringSubviewToFront:self.homeView];
+            break;
+        case 1:
+            [self.baseView bringSubviewToFront:myAccountView.view];
+            break;
+        case 2:
+            [self.baseView bringSubviewToFront:myCombinationView.view];
+            break;
+        case 3:
+            [self.baseView bringSubviewToFront:focusView.view];
+            break;
+        case 4:
+            [self.baseView bringSubviewToFront:consultantView.view];
+            break;
+        case 5:
+            [self.baseView bringSubviewToFront:myCycleView.view];
+            break;
+        default:
+            [self.baseView bringSubviewToFront:self.homeView];
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -245,6 +302,14 @@
     }
 }
 
+
+//TrendDelegate
+
+- (void)didSelectedTrendCellAt:(NSIndexPath*)indexPath forTrendNum:(int)trendIndex
+{
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Selected" message:[NSString stringWithFormat:@"Selected No.%d trendView at indexPath %d",trendIndex,indexPath.row]delegate:nil cancelButtonTitle:@"Sure" otherButtonTitles:nil];
+    [av show];
+}
 /*
 #pragma mark - Navigation
 

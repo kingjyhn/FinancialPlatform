@@ -17,11 +17,6 @@
 		1884AC8419A8E07300CE61B4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1884AC8219A8E07300CE61B4 /* Main_iPad.storyboard */; };
 		1884AC8719A8E07300CE61B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884AC8619A8E07300CE61B4 /* ViewController.m */; };
 		1884AC8919A8E07300CE61B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1884AC8819A8E07300CE61B4 /* Images.xcassets */; };
-		1884AC9019A8E07300CE61B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1884AC8F19A8E07300CE61B4 /* XCTest.framework */; };
-		1884AC9119A8E07300CE61B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1884AC6D19A8E07300CE61B4 /* Foundation.framework */; };
-		1884AC9219A8E07300CE61B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1884AC7119A8E07300CE61B4 /* UIKit.framework */; };
-		1884AC9A19A8E07400CE61B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1884AC9819A8E07400CE61B4 /* InfoPlist.strings */; };
-		1884AC9C19A8E07400CE61B4 /* FinancialPlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884AC9B19A8E07400CE61B4 /* FinancialPlatformTests.m */; };
 		1884ACAB19A8E61400CE61B4 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884ACAA19A8E61400CE61B4 /* IntroViewController.m */; };
 		1884ACAF19A8E66600CE61B4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884ACAE19A8E66600CE61B4 /* HomeViewController.m */; };
 		1884ACB319A8E6EE00CE61B4 /* StateServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 1884ACB219A8E6EE00CE61B4 /* StateServices.m */; };
@@ -51,6 +46,17 @@
 		1884AD0319A9C11300CE61B4 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 1884AD0219A9C11300CE61B4 /* launch.png */; };
 		1884AD0519A9C20500CE61B4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1884AD0419A9C20500CE61B4 /* icon.png */; };
 		1884AD0719A9C26600CE61B4 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1884AD0619A9C26600CE61B4 /* icon1.png */; };
+		189DE08619BDA52600B6F17F /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DE08419BDA52600B6F17F /* MyAccountViewController.m */; };
+		189DE08719BDA52600B6F17F /* MyAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189DE08519BDA52600B6F17F /* MyAccountViewController.xib */; };
+		189DE08B19BDA7E200B6F17F /* MyCombinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DE08919BDA7E200B6F17F /* MyCombinationViewController.m */; };
+		189DE08C19BDA7E200B6F17F /* MyCombinationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189DE08A19BDA7E200B6F17F /* MyCombinationViewController.xib */; };
+		189DE09019BDA84200B6F17F /* FocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DE08E19BDA84200B6F17F /* FocusViewController.m */; };
+		189DE09119BDA84200B6F17F /* FocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189DE08F19BDA84200B6F17F /* FocusViewController.xib */; };
+		189DE09519BDA8B100B6F17F /* ConsultantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DE09319BDA8B100B6F17F /* ConsultantViewController.m */; };
+		189DE09619BDA8B100B6F17F /* ConsultantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189DE09419BDA8B100B6F17F /* ConsultantViewController.xib */; };
+		189DE09A19BDA92300B6F17F /* MyCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189DE09819BDA92300B6F17F /* MyCycleViewController.m */; };
+		189DE09B19BDA92300B6F17F /* MyCycleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189DE09919BDA92300B6F17F /* MyCycleViewController.xib */; };
+		189DE0B019BFEEE300B6F17F /* libGMGridView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 189DE0A919BEAB9C00B6F17F /* libGMGridView.a */; };
 		189E0A3B19AB04C000B4B2B6 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E0A3A19AB04C000B4B2B6 /* icon2.png */; };
 		189E0A3D19AB075E00B4B2B6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189E0A3C19AB075E00B4B2B6 /* QuartzCore.framework */; };
 		189E0A4D19ACAFF500B4B2B6 /* recommended1.png in Resources */ = {isa = PBXBuildFile; fileRef = 189E0A4819ACAFF500B4B2B6 /* recommended1.png */; };
@@ -63,12 +69,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1884AC9319A8E07300CE61B4 /* PBXContainerItemProxy */ = {
+		189DE0A819BEAB9C00B6F17F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1884AC6219A8E07300CE61B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1884AC6919A8E07300CE61B4;
-			remoteInfo = FinancialPlatform;
+			containerPortal = 189DE0A419BEAB9B00B6F17F /* GMGridView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 78509312149FAC2E000787E4;
+			remoteInfo = GMGridView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -88,7 +94,6 @@
 		1884AC8519A8E07300CE61B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1884AC8619A8E07300CE61B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1884AC8819A8E07300CE61B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1884AC8E19A8E07300CE61B4 /* FinancialPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinancialPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1884AC8F19A8E07300CE61B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1884AC9719A8E07400CE61B4 /* FinancialPlatformTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FinancialPlatformTests-Info.plist"; sourceTree = "<group>"; };
 		1884AC9919A8E07400CE61B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -132,6 +137,22 @@
 		1884AD0219A9C11300CE61B4 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = Images/launch.png; sourceTree = "<group>"; };
 		1884AD0419A9C20500CE61B4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Images/icon.png; sourceTree = "<group>"; };
 		1884AD0619A9C26600CE61B4 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon1.png; path = Images/icon1.png; sourceTree = "<group>"; };
+		189DE08319BDA52600B6F17F /* MyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAccountViewController.h; path = Views/MyAccountViewController.h; sourceTree = "<group>"; };
+		189DE08419BDA52600B6F17F /* MyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAccountViewController.m; path = Views/MyAccountViewController.m; sourceTree = "<group>"; };
+		189DE08519BDA52600B6F17F /* MyAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyAccountViewController.xib; path = Views/MyAccountViewController.xib; sourceTree = "<group>"; };
+		189DE08819BDA7E200B6F17F /* MyCombinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCombinationViewController.h; path = Views/MyCombinationViewController.h; sourceTree = "<group>"; };
+		189DE08919BDA7E200B6F17F /* MyCombinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCombinationViewController.m; path = Views/MyCombinationViewController.m; sourceTree = "<group>"; };
+		189DE08A19BDA7E200B6F17F /* MyCombinationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCombinationViewController.xib; path = Views/MyCombinationViewController.xib; sourceTree = "<group>"; };
+		189DE08D19BDA84200B6F17F /* FocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FocusViewController.h; path = Views/FocusViewController.h; sourceTree = "<group>"; };
+		189DE08E19BDA84200B6F17F /* FocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FocusViewController.m; path = Views/FocusViewController.m; sourceTree = "<group>"; };
+		189DE08F19BDA84200B6F17F /* FocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FocusViewController.xib; path = Views/FocusViewController.xib; sourceTree = "<group>"; };
+		189DE09219BDA8B100B6F17F /* ConsultantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsultantViewController.h; path = Views/ConsultantViewController.h; sourceTree = "<group>"; };
+		189DE09319BDA8B100B6F17F /* ConsultantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsultantViewController.m; path = Views/ConsultantViewController.m; sourceTree = "<group>"; };
+		189DE09419BDA8B100B6F17F /* ConsultantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConsultantViewController.xib; path = Views/ConsultantViewController.xib; sourceTree = "<group>"; };
+		189DE09719BDA92300B6F17F /* MyCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCycleViewController.h; path = Views/MyCycleViewController.h; sourceTree = "<group>"; };
+		189DE09819BDA92300B6F17F /* MyCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCycleViewController.m; path = Views/MyCycleViewController.m; sourceTree = "<group>"; };
+		189DE09919BDA92300B6F17F /* MyCycleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCycleViewController.xib; path = Views/MyCycleViewController.xib; sourceTree = "<group>"; };
+		189DE0A419BEAB9B00B6F17F /* GMGridView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GMGridView.xcodeproj; path = FinancialPlatform/Framework/GMGridView/GMGridView.xcodeproj; sourceTree = "<group>"; };
 		189E0A3A19AB04C000B4B2B6 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = Images/icon2.png; sourceTree = "<group>"; };
 		189E0A3C19AB075E00B4B2B6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		189E0A4819ACAFF500B4B2B6 /* recommended1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recommended1.png; path = Images/recommended1.png; sourceTree = "<group>"; };
@@ -150,20 +171,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189DE0B019BFEEE300B6F17F /* libGMGridView.a in Frameworks */,
 				189E0A3D19AB075E00B4B2B6 /* QuartzCore.framework in Frameworks */,
 				1884AC7019A8E07300CE61B4 /* CoreGraphics.framework in Frameworks */,
 				1884AC7219A8E07300CE61B4 /* UIKit.framework in Frameworks */,
 				1884AC6E19A8E07300CE61B4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1884AC8B19A8E07300CE61B4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1884AC9019A8E07300CE61B4 /* XCTest.framework in Frameworks */,
-				1884AC9219A8E07300CE61B4 /* UIKit.framework in Frameworks */,
-				1884AC9119A8E07300CE61B4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				1884AC6A19A8E07300CE61B4 /* FinancialPlatform.app */,
-				1884AC8E19A8E07300CE61B4 /* FinancialPlatformTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +203,7 @@
 		1884AC6C19A8E07300CE61B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				189DE0A419BEAB9B00B6F17F /* GMGridView.xcodeproj */,
 				189E0A3C19AB075E00B4B2B6 /* QuartzCore.framework */,
 				1884AC6D19A8E07300CE61B4 /* Foundation.framework */,
 				1884AC6F19A8E07300CE61B4 /* CoreGraphics.framework */,
@@ -252,19 +264,13 @@
 		1884ACAC19A8E61C00CE61B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1884ACAD19A8E66600CE61B4 /* HomeViewController.h */,
-				1884ACAE19A8E66600CE61B4 /* HomeViewController.m */,
-				1884ACA919A8E61400CE61B4 /* IntroViewController.h */,
-				1884ACAA19A8E61400CE61B4 /* IntroViewController.m */,
-				1884ACB419A8E8F400CE61B4 /* IntroViewController.xib */,
-				1884ACED19A9A00800CE61B4 /* CategoryViewController.h */,
-				1884ACEE19A9A00800CE61B4 /* CategoryViewController.m */,
-				189E0A5619B2D87000B4B2B6 /* TrendViewController.h */,
-				189E0A5719B2D87000B4B2B6 /* TrendViewController.m */,
-				1884ACF019A9AAB400CE61B4 /* Cells */,
-				1884ACB619A8E97E00CE61B4 /* Intros */,
-				189E0A5919B2DDE500B4B2B6 /* TrendView.h */,
-				189E0A5A19B2DDE500B4B2B6 /* TrendView.m */,
+				189DE0A219BDAAED00B6F17F /* Intro */,
+				189DE0A119BDAAD200B6F17F /* Home */,
+				189DE09C19BDAA8000B6F17F /* MyAccount */,
+				189DE09D19BDAA8D00B6F17F /* MyCombination */,
+				189DE09E19BDAA9E00B6F17F /* Focus */,
+				189DE09F19BDAAB100B6F17F /* Consultant */,
+				189DE0A019BDAABD00B6F17F /* MyCycle */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -278,7 +284,7 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
-		1884ACB619A8E97E00CE61B4 /* Intros */ = {
+		1884ACB619A8E97E00CE61B4 /* IntroSubViews */ = {
 			isa = PBXGroup;
 			children = (
 				1884ACB719A8E9C800CE61B4 /* Intro1ViewController.h */,
@@ -288,7 +294,7 @@
 				1884ACBD19A8E9DA00CE61B4 /* Intro2ViewController.m */,
 				1884ACBE19A8E9DA00CE61B4 /* Intro2ViewController.xib */,
 			);
-			name = Intros;
+			name = IntroSubViews;
 			sourceTree = "<group>";
 		};
 		1884ACC319A8FF3800CE61B4 /* Images */ = {
@@ -350,6 +356,91 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		189DE09C19BDAA8000B6F17F /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				189DE08319BDA52600B6F17F /* MyAccountViewController.h */,
+				189DE08419BDA52600B6F17F /* MyAccountViewController.m */,
+				189DE08519BDA52600B6F17F /* MyAccountViewController.xib */,
+			);
+			name = MyAccount;
+			sourceTree = "<group>";
+		};
+		189DE09D19BDAA8D00B6F17F /* MyCombination */ = {
+			isa = PBXGroup;
+			children = (
+				189DE08819BDA7E200B6F17F /* MyCombinationViewController.h */,
+				189DE08919BDA7E200B6F17F /* MyCombinationViewController.m */,
+				189DE08A19BDA7E200B6F17F /* MyCombinationViewController.xib */,
+			);
+			name = MyCombination;
+			sourceTree = "<group>";
+		};
+		189DE09E19BDAA9E00B6F17F /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				189DE08D19BDA84200B6F17F /* FocusViewController.h */,
+				189DE08E19BDA84200B6F17F /* FocusViewController.m */,
+				189DE08F19BDA84200B6F17F /* FocusViewController.xib */,
+			);
+			name = Focus;
+			sourceTree = "<group>";
+		};
+		189DE09F19BDAAB100B6F17F /* Consultant */ = {
+			isa = PBXGroup;
+			children = (
+				189DE09219BDA8B100B6F17F /* ConsultantViewController.h */,
+				189DE09319BDA8B100B6F17F /* ConsultantViewController.m */,
+				189DE09419BDA8B100B6F17F /* ConsultantViewController.xib */,
+			);
+			name = Consultant;
+			sourceTree = "<group>";
+		};
+		189DE0A019BDAABD00B6F17F /* MyCycle */ = {
+			isa = PBXGroup;
+			children = (
+				189DE09719BDA92300B6F17F /* MyCycleViewController.h */,
+				189DE09819BDA92300B6F17F /* MyCycleViewController.m */,
+				189DE09919BDA92300B6F17F /* MyCycleViewController.xib */,
+			);
+			name = MyCycle;
+			sourceTree = "<group>";
+		};
+		189DE0A119BDAAD200B6F17F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1884ACAD19A8E66600CE61B4 /* HomeViewController.h */,
+				1884ACAE19A8E66600CE61B4 /* HomeViewController.m */,
+				1884ACED19A9A00800CE61B4 /* CategoryViewController.h */,
+				1884ACEE19A9A00800CE61B4 /* CategoryViewController.m */,
+				189E0A5619B2D87000B4B2B6 /* TrendViewController.h */,
+				189E0A5719B2D87000B4B2B6 /* TrendViewController.m */,
+				189E0A5919B2DDE500B4B2B6 /* TrendView.h */,
+				189E0A5A19B2DDE500B4B2B6 /* TrendView.m */,
+				1884ACF019A9AAB400CE61B4 /* Cells */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		189DE0A219BDAAED00B6F17F /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				1884ACA919A8E61400CE61B4 /* IntroViewController.h */,
+				1884ACAA19A8E61400CE61B4 /* IntroViewController.m */,
+				1884ACB419A8E8F400CE61B4 /* IntroViewController.xib */,
+				1884ACB619A8E97E00CE61B4 /* IntroSubViews */,
+			);
+			name = Intro;
+			sourceTree = "<group>";
+		};
+		189DE0A519BEAB9B00B6F17F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189DE0A919BEAB9C00B6F17F /* libGMGridView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,24 +461,6 @@
 			productReference = 1884AC6A19A8E07300CE61B4 /* FinancialPlatform.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1884AC8D19A8E07300CE61B4 /* FinancialPlatformTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1884ACA219A8E07400CE61B4 /* Build configuration list for PBXNativeTarget "FinancialPlatformTests" */;
-			buildPhases = (
-				1884AC8A19A8E07300CE61B4 /* Sources */,
-				1884AC8B19A8E07300CE61B4 /* Frameworks */,
-				1884AC8C19A8E07300CE61B4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1884AC9419A8E07300CE61B4 /* PBXTargetDependency */,
-			);
-			name = FinancialPlatformTests;
-			productName = FinancialPlatformTests;
-			productReference = 1884AC8E19A8E07300CE61B4 /* FinancialPlatformTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -399,9 +472,6 @@
 				TargetAttributes = {
 					1884AC6919A8E07300CE61B4 = {
 						DevelopmentTeam = W7MQ5T8GZP;
-					};
-					1884AC8D19A8E07300CE61B4 = {
-						TestTargetID = 1884AC6919A8E07300CE61B4;
 					};
 				};
 			};
@@ -416,25 +486,43 @@
 			mainGroup = 1884AC6119A8E07300CE61B4;
 			productRefGroup = 1884AC6B19A8E07300CE61B4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 189DE0A519BEAB9B00B6F17F /* Products */;
+					ProjectRef = 189DE0A419BEAB9B00B6F17F /* GMGridView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1884AC6919A8E07300CE61B4 /* FinancialPlatform */,
-				1884AC8D19A8E07300CE61B4 /* FinancialPlatformTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		189DE0A919BEAB9C00B6F17F /* libGMGridView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGMGridView.a;
+			remoteRef = 189DE0A819BEAB9C00B6F17F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1884AC6819A8E07300CE61B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189DE08C19BDA7E200B6F17F /* MyCombinationViewController.xib in Resources */,
+				189DE09B19BDA92300B6F17F /* MyCycleViewController.xib in Resources */,
 				1884AD0319A9C11300CE61B4 /* launch.png in Resources */,
 				1884ACFF19A9B44F00CE61B4 /* category4.png in Resources */,
 				1884ACFD19A9B44F00CE61B4 /* category2.png in Resources */,
 				1884ACE019A99A3600CE61B4 /* person.png in Resources */,
 				189E0A4E19ACAFF500B4B2B6 /* recommended2.png in Resources */,
 				1884AD0019A9B44F00CE61B4 /* category5.png in Resources */,
+				189DE09119BDA84200B6F17F /* FocusViewController.xib in Resources */,
 				1884ACF519A9AAF400CE61B4 /* CategoryTableViewCell.xib in Resources */,
 				189E0A4D19ACAFF500B4B2B6 /* recommended1.png in Resources */,
 				1884AD0519A9C20500CE61B4 /* icon.png in Resources */,
@@ -449,6 +537,7 @@
 				1884ACBB19A8E9C800CE61B4 /* Intro1ViewController.xib in Resources */,
 				1884ACC719A8FF7B00CE61B4 /* cancel.png in Resources */,
 				1884ACB519A8E8F400CE61B4 /* IntroViewController.xib in Resources */,
+				189DE09619BDA8B100B6F17F /* ConsultantViewController.xib in Resources */,
 				1884ACE119A99A3600CE61B4 /* search.png in Resources */,
 				1884AC8919A8E07300CE61B4 /* Images.xcassets in Resources */,
 				189E0A4F19ACAFF500B4B2B6 /* recommended3.png in Resources */,
@@ -457,15 +546,8 @@
 				1884AC8119A8E07300CE61B4 /* Main_iPhone.storyboard in Resources */,
 				189E0A5119ACAFF500B4B2B6 /* recommended5.png in Resources */,
 				1884AC7819A8E07300CE61B4 /* InfoPlist.strings in Resources */,
+				189DE08719BDA52600B6F17F /* MyAccountViewController.xib in Resources */,
 				189E0A3B19AB04C000B4B2B6 /* icon2.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1884AC8C19A8E07300CE61B4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1884AC9A19A8E07400CE61B4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +564,9 @@
 				1884AC7A19A8E07300CE61B4 /* main.m in Sources */,
 				1884ACB319A8E6EE00CE61B4 /* StateServices.m in Sources */,
 				1884ACEF19A9A00800CE61B4 /* CategoryViewController.m in Sources */,
+				189DE08619BDA52600B6F17F /* MyAccountViewController.m in Sources */,
+				189DE09A19BDA92300B6F17F /* MyCycleViewController.m in Sources */,
+				189DE08B19BDA7E200B6F17F /* MyCombinationViewController.m in Sources */,
 				1884ACEB19A99F4F00CE61B4 /* DXSemiViewController.m in Sources */,
 				1884ACF419A9AAF400CE61B4 /* CategoryTableViewCell.m in Sources */,
 				1884ACBA19A8E9C800CE61B4 /* Intro1ViewController.m in Sources */,
@@ -489,28 +574,14 @@
 				1884ACBF19A8E9DA00CE61B4 /* Intro2ViewController.m in Sources */,
 				1884ACEC19A99F4F00CE61B4 /* DXSemiViewControllerCategory.m in Sources */,
 				1884ACEA19A99F4F00CE61B4 /* DXSemiTableViewController.m in Sources */,
+				189DE09019BDA84200B6F17F /* FocusViewController.m in Sources */,
 				1884ACAB19A8E61400CE61B4 /* IntroViewController.m in Sources */,
 				189E0A5B19B2DDE500B4B2B6 /* TrendView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1884AC8A19A8E07300CE61B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1884AC9C19A8E07400CE61B4 /* FinancialPlatformTests.m in Sources */,
+				189DE09519BDA8B100B6F17F /* ConsultantViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1884AC9419A8E07300CE61B4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1884AC6919A8E07300CE61B4 /* FinancialPlatform */;
-			targetProxy = 1884AC9319A8E07300CE61B4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1884AC7619A8E07300CE61B4 /* InfoPlist.strings */ = {
@@ -580,9 +651,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -613,8 +686,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -629,9 +704,17 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FinancialPlatform/FinancialPlatform-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					FinancialPlatform/Framework/GMGridView,
+				);
 				INFOPLIST_FILE = "FinancialPlatform/FinancialPlatform-Info.plist";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D14A44A7-D3E3-47E2-97EC-021CF9887017";
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -641,54 +724,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yunnan Yuanxin Technology Co., Ltd.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FinancialPlatform/FinancialPlatform-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					FinancialPlatform/Framework/GMGridView,
+				);
 				INFOPLIST_FILE = "FinancialPlatform/FinancialPlatform-Info.plist";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "D14A44A7-D3E3-47E2-97EC-021CF9887017";
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		1884ACA319A8E07400CE61B4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FinancialPlatform.app/FinancialPlatform";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FinancialPlatform/FinancialPlatform-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "FinancialPlatformTests/FinancialPlatformTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		1884ACA419A8E07400CE61B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FinancialPlatform.app/FinancialPlatform";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FinancialPlatform/FinancialPlatform-Prefix.pch";
-				INFOPLIST_FILE = "FinancialPlatformTests/FinancialPlatformTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -709,15 +760,6 @@
 			buildConfigurations = (
 				1884ACA019A8E07400CE61B4 /* Debug */,
 				1884ACA119A8E07400CE61B4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1884ACA219A8E07400CE61B4 /* Build configuration list for PBXNativeTarget "FinancialPlatformTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1884ACA319A8E07400CE61B4 /* Debug */,
-				1884ACA419A8E07400CE61B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
